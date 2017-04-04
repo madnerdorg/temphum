@@ -1,4 +1,4 @@
-[Version française / French version](https://github.com/madnerdorg/temphum/blob/master/README.fr.MD)
+[Version française / French version](https://github.com/madnerdorg/temphum/blob/master/README.fr.md)
 
 ![Photo temphum](https://github.com/madnerdorg/temphum/raw/master/doc/temphum_device.jpg)   
 temphums is an USB device based on an Arduino nano (clone) to get temperature/humidity data.
@@ -10,9 +10,9 @@ temphums is an USB device based on an Arduino nano (clone) to get temperature/hu
 * Total : 6€ (4€) 
 
 # Usage
-    * Copy **libraries/temphum** into Arduino Sketchbooks folder
-    * Upload temphum/temphum.ino
-    * Go to [TODO]
+* Copy **libraries/temphum** into Arduino Sketchbooks folder
+* Upload temphum/temphum.ino
+* Go to [TODO]
 
 # Wiring
 You need to add a resistor between 5v/pin 2.
