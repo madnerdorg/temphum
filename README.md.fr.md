@@ -1,6 +1,6 @@
 [English version](https://github.com/madnerdorg/temphum/)
 
-![Photo temphum](https://github.com/madnerdorg/leds/raw/master/doc/temphum_device.jpg)   
+![Photo temphum](https://github.com/madnerdorg/temphum/raw/master/doc/temphum_device.jpg)   
 temphum est un appareil USB fait à partir d'un arduino nano (clone) pour obtenir les données de température et d'humidité.
 
 # Composants
@@ -10,9 +10,9 @@ temphum est un appareil USB fait à partir d'un arduino nano (clone) pour obteni
 * Total : 6€ (4€) 
 
 # Utilisation
-    * Copier **libraries/temphum** dans le carnet de croquis Arduino
-    * Téléverser **temphum/temphum.ino**
-    * Aller sur [TODO]
+* Copier **libraries/temphum** dans le carnet de croquis Arduino
+* Téléverser **temphum/temphum.ino**
+* Aller sur [TODO]
 
 # Branchement
 Vous devez mettre une résistance qui relie la broche 2 avec le 5v

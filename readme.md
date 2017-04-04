@@ -1,6 +1,6 @@
 [Version française / French version](https://github.com/madnerdorg/temphum/blob/master/README.fr.MD)
 
-![Photo temphum](https://github.com/madnerdorg/leds/raw/master/doc/temphum_device.jpg)   
+![Photo temphum](https://github.com/madnerdorg/temphum/raw/master/doc/temphum_device.jpg)   
 temphums is an USB device based on an Arduino nano (clone) to get temperature/humidity data.
 
 # Components
