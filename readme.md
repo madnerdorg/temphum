@@ -12,7 +12,7 @@ temphums is an USB device based on an Arduino nano (clone) to get temperature/hu
 # Usage
 * Copy **libraries/temphum** into Arduino Sketchbooks folder
 * Upload temphum/temphum.ino
-* Go to http://madnerd.org/interface/midi
+* Go to http://madnerd.org/interface/temphum
 
 # Wiring
 You need to add a resistor between 5v/pin 2.
