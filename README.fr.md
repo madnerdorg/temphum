@@ -12,7 +12,7 @@ temphum est un appareil USB fait à partir d'un arduino nano (clone) pour obteni
 # Utilisation
 * Copier **libraries/temphum** dans le carnet de croquis Arduino
 * Téléverser **temphum/temphum.ino**
-* Aller sur [TODO]
+* Aller sur http://madnerd.org/interface/midi
 
 # Branchement
 Vous devez mettre une résistance qui relie la broche 2 avec le 5v
