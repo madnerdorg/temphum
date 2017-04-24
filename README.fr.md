@@ -28,16 +28,17 @@ Vous devez mettre une résistance qui relie la broche 2 avec le 5v
 Modèle fait par Olivier Sarrailh : https://github.com/madnerdorg/temphum/tree/master/3D    
 
 # Commandes disponibles
-* /info -------> Affiche nom:port (temphum:42004)
+* /info -------> affiche nom:port (temphum:42004)
 * Une fois /info envoyé , le périphérique va envoyé humidité(%);temp(°c) (par ex:50.00;24.00)
 
-# Licenses
+# Licences
 
 ## temphum.ino
 * Auteur: Rémi Sarrailh (madnerd.org)       
-* License: MIT   
+* Licence: MIT   
 
 ## DHT_sensor_library
 * Auteur : Tony DiCola (Adafruit Industries)
-* License : MIT
+* Licence : MIT
 * Lien : https://github.com/adafruit/DHT-sensor-library
+
