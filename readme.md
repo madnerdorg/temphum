@@ -1,7 +1,7 @@
 [Version française / French version](https://github.com/madnerdorg/temphum/blob/master/README.fr.md)
 
 ![Photo temphum](https://github.com/madnerdorg/temphum/raw/master/doc/temphum_device.jpg)   
-temphums is an USB device based on an Arduino nano (clone) to get temperature/humidity data.
+temphum is an USB device based on an Arduino nano (clone) to get temperature/humidity data.
 
 # Components
 * Arduino nano CH340G: 2€
@@ -41,3 +41,4 @@ Models by Olivier Sarrailh : https://github.com/madnerdorg/temphum/tree/master/3
 * Author : Tony DiCola (Adafruit Industries)
 * Licence : MIT
 * Link : https://github.com/adafruit/DHT-sensor-library
+
