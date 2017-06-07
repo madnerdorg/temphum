@@ -25,7 +25,7 @@ Vous devez mettre une résistance qui relie la broche 2 avec le 5v
 * Arduino - GND : GND (4)
 
 # Modèle 3D
-Modèle fait par Olivier Sarrailh : https://github.com/madnerdorg/temphum/tree/master/3D    
+Modèle fait par Olivier Sarrailh : https://github.com/madnerdorg/temphum/tree/master/stl    
 
 # Commandes disponibles
 * /info -------> affiche nom:port (temphum:42004)
