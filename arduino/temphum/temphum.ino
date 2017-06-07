@@ -1,9 +1,17 @@
-// Example testing sketch for various DHT humidity/temperature sensors
+//temphum (port:42004)
+//Serial temperature/humidity sensor
+//With optional luminosity sensor (using a photoresistor)
+//https://github.com/madnerdorg/temphum
+
+// Based on Example testing sketch
 // Written by ladyada, public domain
 
 #include "DHT.h"
 
-#define DHTPIN 2     // what digital pin we're connected to
+const String usb_name = "temphum:42004";
+const bool hasPhotoResistor = false;
+const int DHTPIN = 2;     // what digital pin we're connected to
+const int LUMPIN = A0;    //Photoresistor pin
 
 // Uncomment whatever type you're using!
 #define DHTTYPE DHT11   // DHT 11
@@ -23,7 +31,6 @@
 // as the current DHT reading algorithm adjusts itself to work on faster procs.
 DHT dht(DHTPIN, DHTTYPE);
 
-const String usb_name = "temphum:42004";
 //Serial string buffer
 String readString;
 bool serial_check = false;
@@ -38,7 +45,7 @@ void serialCheck() {
     delay(1000);
   }
 
-   if (readString == "/info") {
+  if (readString == "/info") {
     Serial.println(usb_name);
     serial_check = true;
     delay(1000);
@@ -63,20 +70,17 @@ void serialManager() {
 void setup() {
   Serial.begin(115200);
   //Serial.println("DHTxx test!");
-
   dht.begin();
 }
 
 void loop() {
-  // Wait a few seconds between measurements.
   delay(100);
   serialManager();
 
   //If string received
   if (readString.length() > 0) {
     serialCheck();
-    
-    
+    readString = "";
   }
 
   // Reading temperature or humidity takes about 250 milliseconds!
@@ -84,19 +88,31 @@ void loop() {
   float h = dht.readHumidity();
   // Read temperature as Celsius (the default)
   float t = dht.readTemperature();
+
+  int lum = analogRead(LUMPIN);
   // Read temperature as Fahrenheit (isFahrenheit = true)
   //float f = dht.readTemperature(true);
 
-  // Check if any reads failed and exit early (to try again).
-
   if (serial_check) {
     if (isnan(h) || isnan(t)) {
-      Serial.println("NaN;NaN");
+      if (hasPhotoResistor) {
+        Serial.println("NaN;NaN;NaN");
+      } else {
+        Serial.println("NaN;NaN");
+      }
     } else {
       Serial.print(h);
       Serial.print(";");
-      Serial.println(t);
+
+      if (hasPhotoResistor) {
+        Serial.print(t);
+        Serial.print(";");
+        Serial.println(lum);
+      } else {
+        Serial.println(t);
+      }
+
     }
   }
-  readString = "";
+  
 }
