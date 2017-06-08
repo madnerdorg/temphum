@@ -1,0 +1,106 @@
+<script>
+  ip = "localhost";
+    
+  cold = 19;
+  confort = 23;
+  hot = 28;
+  veryhot = 32;
+
+  sensor = new ReconnectingWebSocket("ws://"+ip+":" + ports.temphum);
+  sensor.onmessage = readSensor;
+  sensor.onerror = connectionFailed;
+  sensor.onclose = connectionClosed;
+  sensor.onopen = connectionStarted;
+  
+  resetSensor();
+ 
+  function resetSensor(){
+      $(".progress.hum").progress({ 
+   			percent:0
+  });
+  
+  $("#lum_icon").html(0); 
+  $("#temp_icon").html(0);
+    
+  }
+
+  function connectionStarted(){
+   sensor.send("/info");
+ }
+
+
+ function connectionClosed(){
+  resetSensor();
+}
+
+function connectionFailed(){
+ resetSensor();
+}
+
+
+function readSensor(event){
+  sensor_value = event.data.split(";");
+  humidity = sensor_value[0];    
+  temperature = sensor_value[1];
+  luminosity =  sensor_value[2];
+  $(".progress.hum").progress({ 
+   percent:humidity
+ });
+
+  display_temp(temperature);
+  $("#lum_icon").html(luminosity);
+}
+
+function display_temp(temp){
+  var temp_icon;
+
+  if(temp < cold){
+   temp_icon = "big blue empty thermometer icon";
+ }
+
+ if(temp >= cold && temp < confort){
+   temp_icon = "big teal quarter thermometer icon";
+ }
+
+ if(temp >= confort && temp < hot){
+   temp_icon = "big orange yellow half thermometer icon";
+ }
+
+ if(temp >= hot && temp < veryhot){
+   temp_icon = "big red three quarters thermometer icon";
+ }
+
+ if(temp >= veryhot){
+   temp_icon = "big brown full quarters thermometer icon";
+ }
+
+ $("#temp_icon").attr('class', temp_icon);
+ $("#temp_icon").html(temp+"°C");
+}
+</script>
+
+<div class="ui inverted segment">
+ <div class="ui inverted blue hum progress" data-percent="0">
+  <div class="bar" style="transition-duration: 300ms; width: 0%;">
+   <div class="progress active">0%</div>
+ </div>
+ <div class="label">Humidité</div>
+</div>
+</div>
+
+<div class="ui inverted segment">
+ <h1>
+  <div class="value">
+   <i id="temp_icon" class="big orange yellow half thermometer icon">0</i> 
+ </div>
+</h1>
+</div>
+<div class="ui inverted segment">
+ <h1>
+  <div class="value">
+   <i id="lum_icon" class="light icon">0</i> 
+ </div>
+ <div class="label">Luminosité</div>
+</h1>
+</div>
+
