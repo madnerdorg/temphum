@@ -25,7 +25,7 @@ You need to add a resistor between 5v/pin 2.
 * Arduino - GND : GND (4)
 
 # 3D printing
-Models by Olivier Sarrailh : https://github.com/madnerdorg/temphum/tree/master/3D    
+Models by Olivier Sarrailh : https://github.com/madnerdorg/temphum/tree/master/stl  
 
 # Commands available
 * /info -------> Give name:port (temphum:42004)
