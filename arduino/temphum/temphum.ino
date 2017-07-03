@@ -39,12 +39,6 @@ bool serial_check = false;
 
 //When application asked if this is the correct arduino
 void serialCheck() {
-  if (readString == usb_name) {
-    Serial.print("OK");
-    serial_check = true;
-    delay(1000);
-  }
-
   if (readString == "/info") {
     Serial.println(usb_name);
     serial_check = true;
