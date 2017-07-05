@@ -28,7 +28,7 @@ Voici un exemple de widget : [http://madnerd.org/interface/temphum](http://madne
 * Importer **apps/libreInterface/dht11.json**
 * Modifier le code
 
-[![libreInterface TempHum](doc/libreinterface_temphum.jpg)](https://www.youtube.com/watch?v=lKUhhlHZKvI)
+[![libreInterface TempHum](doc/libreinterface_temphum.jpg)](https://www.youtube.com/watch?v=eIsdwXkPbS0)
 
 Toutes les modifications faites à l'aide de la console de développement seront sauvegardés.   
 Aller sur [http://github.com/madnerdorg/libreinterface](libreInterface) pour plus d'informations.
