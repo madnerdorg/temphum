@@ -26,13 +26,13 @@ There is a example of a widget here [http://madnerd.org/interface/temphum](http:
 * Import **apps/libreInterface/dht11.json**
 * Modify the code
 
-[![libreInterface temphum](doc/libreinterface_temphum.jpg)](https://www.youtube.com/watch?v=yIe4TfZuU6A)
+[![libreInterface temphum](doc/libreinterface_temphum.jpg)](https://www.youtube.com/watch?v=lKUhhlHZKvI)
 
 All modifications made using the developer console will be saved.   
 Go to [http://github.com/madnerdorg/libreinterface](libreInterface) for more information.
 
 # How to build temphum ?
-[![Video soldering temphum](doc/temphum_video.jpg)](https://www.youtube.com/watch?v=eIsdwXkPbS0)
+[![Video soldering temphum](doc/temphum_video.jpg)](https://www.youtube.com/watch?v=5_wHOCGhlcE)
 
 ## Upload
 * Copy **arduino/libraries** into Arduino Sketchbooks folder

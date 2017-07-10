@@ -28,13 +28,13 @@ Voici un exemple de widget : [http://madnerd.org/interface/temphum](http://madne
 * Importer **apps/libreInterface/dht11.json**
 * Modifier le code
 
-[![libreInterface TempHum](doc/libreinterface_temphum.jpg)](https://www.youtube.com/watch?v=eIsdwXkPbS0)
+[![libreInterface TempHum](doc/libreinterface_temphum.jpg)](https://www.youtube.com/watch?v=yIe4TfZuU6A)
 
 Toutes les modifications faites à l'aide de la console de développement seront sauvegardés.   
 Aller sur [http://github.com/madnerdorg/libreinterface](libreInterface) pour plus d'informations.
 
 # Fabriquer temphum
-[![Video soldering temphum](doc/temphum_video.jpg)](https://www.youtube.com/watch?v=5_wHOCGhlcE)
+[![Video soldering temphum](doc/temphum_video.jpg)](https://www.youtube.com/watch?v=eIsdwXkPbS0)
 ## Copie du programme Arduino
 * Copier **libraries/temphum** dans le carnet de croquis Arduino
 * Téléverser **temphum/temphum.ino**
